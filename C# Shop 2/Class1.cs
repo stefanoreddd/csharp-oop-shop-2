@@ -79,19 +79,27 @@ namespace Negozio
 
         public float Riempi()
         {
+            float litriDaRiempire = 0;
+
             Console.WriteLine("Di quanti litri vuoi riempire?");
-   
-            litriDaRiempire = float.Parse(litriDaRiempire);
+            litriDaRiempire = float.Parse(Console.ReadLine());
             Console.WriteLine("*Riempie la bottiglia*");
             float litriFinali = this.litri + litriDaRiempire;
             Thread.Sleep(5000);
-            if(litriFinali > litri)
+            if(litriFinali > this.litri)
             {
                 Console.WriteLine("Hai versato tutto fuori!");
             }
-            litri = litriFinali;
+            else if (litriFinali == this.litri)
+            {
+                Console.WriteLine("Bottiglia riempita!");
+            }
+
+            this.litri = litriFinali;
             return this.litri;
         }
+
+
 
 
 
