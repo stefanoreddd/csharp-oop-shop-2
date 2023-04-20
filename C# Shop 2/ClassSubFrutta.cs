@@ -49,7 +49,7 @@ namespace Negozio
 
 
         //METODI
-        public int Mangia()
+        public int MangiaFrutta()
         {
             int pezziDaMangiare = 1;
             Console.WriteLine("Chomp chomp...");
