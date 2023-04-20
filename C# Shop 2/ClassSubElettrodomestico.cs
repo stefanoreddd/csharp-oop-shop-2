@@ -13,11 +13,11 @@ namespace Negozio
 
         private string marca;
         private int peso;
-        private string anno;
+        private int anno;
 
 
         //COSTRUTTORE
-        public Elettrodomestico(string productName, string productCategory, string productDescription, int productPrice, string marca, int peso, string anno) : base(productName, productCategory, productDescription, productPrice)
+        public Elettrodomestico(string productName, string productCategory, string productDescription, int productPrice, string marca, int peso, int anno) : base(productName, productCategory, productDescription, productPrice)
         {
             this.marca = marca;
             this.peso = peso;
@@ -37,7 +37,7 @@ namespace Negozio
             return this.peso;
         }
 
-        public string GetAnno()
+        public int GetAnno()
         {
             return this.anno;
         }

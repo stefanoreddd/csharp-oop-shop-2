@@ -12,7 +12,7 @@ namespace Negozio
         //ATTRIBUTI
 
         private float litri;
-        private float ph;
+        private int ph;
         private string sorgente;
         private string marca;
         private string tipo;
@@ -21,7 +21,7 @@ namespace Negozio
 
         //COSTRUTTORE
 
-        public Bevande(string nomeBevanda, string categoriaBevanda, string descrizioneBevanda, int prezzoBevanda, float litri, float ph, string sorgente, string marca, string tipo, string materialeBottiglia) : base(nomeBevanda, categoriaBevanda, descrizioneBevanda, prezzoBevanda)
+        public Bevande(string nomeBevanda, string categoriaBevanda, string descrizioneBevanda, int prezzoBevanda, float litri, int ph, string sorgente, string marca, string tipo, string materialeBottiglia) : base(nomeBevanda, categoriaBevanda, descrizioneBevanda, prezzoBevanda)
         {
             this.litri = litri;
             this.ph = ph;
@@ -40,7 +40,7 @@ namespace Negozio
             return this.litri;
         }
 
-        public float GetPh()
+        public int GetPh()
         {
             return this.ph;
         }

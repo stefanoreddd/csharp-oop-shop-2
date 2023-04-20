@@ -12,12 +12,12 @@ namespace Negozio
         //ATTRIBUTI
 
         private int peso;
-        private int marca;
+        private string marca;
 
 
         //COSTRUTTORE
 
-        public CiboInScatola(string productName, string productCategory, string productDescription, int productPrice, int peso, int marca) : base(productName, productCategory, productDescription, productPrice)
+        public CiboInScatola(string productName, string productCategory, string productDescription, int productPrice, int peso, string marca) : base(productName, productCategory, productDescription, productPrice)
         {
             this.peso = peso;
             this.marca = marca;
@@ -31,7 +31,7 @@ namespace Negozio
             return this.peso;
         }
 
-        public int GetMarca()
+        public string GetMarca()
         {
             return this.marca;
         }
