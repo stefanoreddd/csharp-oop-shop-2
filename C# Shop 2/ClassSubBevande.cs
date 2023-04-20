@@ -68,13 +68,14 @@ namespace Negozio
 
         // METODI
 
-        public void Bevi()
+        public float Bevi()
         {
             float litriDaBere = 0.5f;
             Console.WriteLine("Glu glu glu...");
             this.litri = litri - litriDaBere;
             Thread.Sleep(5000);
             Console.WriteLine("Numero litri dopo aver bevuto: " + this.litri);
+            return this.litri;
         }
 
         public float Riempi()
@@ -99,6 +100,14 @@ namespace Negozio
             return this.litri;
         }
 
+        public float SvuotaBevanda()
+        {
+            Console.WriteLine("*Svuota la bottiglia*");
+            Thread.Sleep(5000);
+            Console.WriteLine("Bottiglia vuota!");
+            this.litri = 0;
+            return this.litri;
+        }
 
 
 
